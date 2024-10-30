@@ -16,4 +16,5 @@ jobs:
       uses: actions/dependency-review-action@v4
       with:
        # Optional alternative syntax for an external file: OWNER/REPOSITORY/FILENAME@BRANCH (uncomment if preferred)
-       config-file: 'ferdle-org/dep-review2/policies/dependency-review-config.yml@main'   
+       config-file: 'ferdle-org/dep-review2/policies/dependency-review-config.yml@main'
+       external-repo-token: ${{ secrets.PAT }}
